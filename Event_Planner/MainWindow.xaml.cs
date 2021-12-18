@@ -23,8 +23,8 @@ namespace Event_Planner
     /// </summary>
     public partial class MainWindow : Window
     {
-        // Change this textfile path. The file 'Members' is located in project folder, bin, debug, .net6.0-windows.
-        string filePath = @"C:\Users\aleks\Desktop\C_Projects\Event_Planner\Event_Planner\bin\Debug\net6.0-windows\Members.txt";
+        // Change this textfile path. The file 'Members' is located in project folder.
+        string filePath = @"C:\Users\aleks\Desktop\C_Projects\Event_Planner\Members.txt";
 
         List<Member> membersFromFileList = new List<Member>();
 

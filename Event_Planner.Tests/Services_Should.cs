@@ -13,8 +13,8 @@ namespace Event_Planner.Tests
     /// </summary>
     public class Services_Should
     {
-        //Filepath for same textfile 'Members' as in MainWindow(located in project folder, bin, debug, .net6.0-windows)
-        string filePath = @"C:\Users\aleks\Desktop\C_Projects\Event_Planner\Event_Planner\bin\Debug\net6.0-windows\Members.txt";
+        //Filepath for same textfile 'Members' as in MainWindow(located in project folder)
+        string filePath = @"C:\Users\aleks\Desktop\C_Projects\Event_Planner\Members.txt";
         
         /// <summary>
         /// Test for adding member.
