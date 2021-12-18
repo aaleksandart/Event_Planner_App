@@ -26,7 +26,7 @@ namespace Event_Planner.Tests
             AddMember sut = new AddMember();
 
             //Act
-            Member member = await sut.AddMemberAsync("Aleksandar", "Todorovic", "a@gmail.com", filePath);
+            Member member = await sut.AddMemberAsync("Aleksandar", "Todorovic", "a@domain.com", filePath);
 
             //Assert
             Assert.NotNull(member);
@@ -40,7 +40,7 @@ namespace Event_Planner.Tests
         public async Task Write_To_File()
         {
             //Arrange
-            Member member = new Member { Id = Guid.NewGuid(), FirstName = "Ganjana", LastName = "Thinpho", Email = "g@gmail.com" };
+            Member member = new Member { Id = Guid.NewGuid(), FirstName = "Ganjana", LastName = "Thinpho", Email = "g@domain.com" };
             WriteAsync sut = new WriteAsync();
 
             //Act
@@ -82,7 +82,7 @@ namespace Event_Planner.Tests
             ReadAsync reader = new ReadAsync();
             List<Member> membersNotUpdated = await reader.ReadFromFileAsync(filePath);
             List<Member> membersUpdated =   new List<Member>();
-            Member member = new Member { Id = Guid.NewGuid(), FirstName = "Daniel", LastName = "Todorovic", Email = "d@gmail.com" };
+            Member member = new Member { Id = Guid.NewGuid(), FirstName = "Daniel", LastName = "Todorovic", Email = "d@domain.com" };
             membersUpdated.Add(member);
             
             //Act
